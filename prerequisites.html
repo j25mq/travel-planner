@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Planner - Prerequisites</title>
+    <link href="media/journal.svg" rel="icon">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <style>
+        @media(max-width: 999px) {
+            #wrapper {
+                margin: 20px 15%;
+            }       
+        }
+        @media(min-width: 1000px) {
+            #wrapper {
+                margin: 20px 25%;
+            }
+            #copyrightFooter {
+                position: absolute;
+                bottom:0;
+                right:0;
+                left:0;
+            }   
+        }
+        #wrapper a {
+            font-weight: bold;
+        }
+        #wrapper a:hover {
+            opacity: .5;
+            transition: .5s;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="holder headline">
+        <a href="index.html" target="_self" style="text-align:left;font-family: 'Short Stack', cursive;">Travel Planner</a>
+      </div>
+    </header>
+    <div id="wrapper">
+        <a href="index.html" target="_self" style="position: absolute;top:25px;left:25px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+        </a>
+        <div style="text-align:left;">
+            <ul>
+                <li><a href="https://github.com/j25mq/travel-planner" target="_self">Clone</a> or <a href="travel-planner.zip" target="_self">download</a> the project on local machine</li>
+                <li>Open terminal and navigate to the 'travel planner' folder with the commmand <a href="https://www.ibm.com/docs/en/aix/7.2?topic=c-cd-command" target="_self">'cd'</a><br>(ex: 'cd Desktop' to enter the 'Desktop' directory, and 'cd travel-planner' to access the travel-planner folder)</li>
+                <li>Run the command <a href="https://docs.npmjs.com/cli/v7/commands/npm-install" target="_self">'npm install'</a> to install the necessary packages</li>
+                <li>Run the command <a href="https://docs.npmjs.com/cli/v7/commands/npm-start" target="_self">'npm run start'</a> to start the server</li>
+            </ul>
+            <p>Desktop or laptop only</p>
+        </div>
+    </div>
+    <footer>
+      <div id="copyrightFooter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+        </svg>
+        <p>Copyright</p>
+        <p>2023</p>
+        <div>
+            Github: <a href="https://github.com/j25mq" target="_blank">j25mq</a>                
+        </div>
+        <div>
+            Website: <a href="https://www.juliemiquelard.com" target="_blank">juliemiquelard.com</a>                
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>

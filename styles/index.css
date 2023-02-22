@@ -1,0 +1,84 @@
+@import 'main.css';
+
+@media(max-width: 999px) {
+    #wrapper h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #wrapper h3 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #wrapper img {
+        position: relative;
+        right: 0;
+        left: 0;
+        height: 1000px;
+    }
+    .imgdescription {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .imgcontainer {
+        overflow: hidden;
+    }
+    #pinkbtn {
+        font-size: 10px;
+        height: fit-content;
+        width: 120px;
+    }
+   .prereq {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        font-size: 12px;
+    }
+}
+@media(min-width: 1000px) {
+    #wrapper h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #wrapper h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    #wrapper img {
+        width: 100%;
+    }
+    .imgdescription {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #pinkbtn {
+        font-size: 15px;
+        height: fit-content;
+        width: 250px;
+    }
+    .prereq {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        font-size: 12px;
+    }
+}
+
+#wrapper img {
+    border-radius: 0;
+    opacity: .5;   
+}
+.imgcontainer {
+    border-radius: 0;
+    position: relative;
+    text-align: center;
+}
+.prereq:hover {
+    opacity: .5;
+    transition: 5s;
+}

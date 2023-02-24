@@ -91,12 +91,16 @@ const fetchInput = async() => {
     const notes = document.getElementById('notes').value;
     // const request = await fetch("http://localhost:8080");
     try {
+        const myTrip = {};
+
         // location output - app2
         if (location) {
             const location = document.getElementById('location').value;
             locationOutput.innerHTML = `<p>${location}</p>`;
             holder1.appendChild(locationOutput);
             console.log(`Trip to: ${location}.`);
+
+            myTrip.location = location;
         };
 
         // date output - app2
@@ -138,6 +142,10 @@ const fetchInput = async() => {
                 holder3.appendChild(nbOfDaysOutput);
                 console.log(`Your trip is ${daysAway} days away.`);
             };
+
+            myTrip.date = date;
+            myTrip.daysAway = daysAway;
+
         } else {
             window.alert('Please enter a date.');
             console.log('No date has been entered.');
@@ -147,12 +155,16 @@ const fetchInput = async() => {
             flightOutput.innerHTML = `<p>${flight}</p>`;
             holder4.appendChild(flightOutput);
             console.log(`Flight information: ${flight}.`);
+
+            myTrip.flight = flight;
         };
         // hosting output - app2
         if (hosting) {
             hostingOutput.innerHTML = `<p>${hosting}</p>`;
             holder5.appendChild(hostingOutput);
             console.log(`Hosting information: ${hosting}.`);
+
+            myTrip.hosting = hosting;
         };
         // notes output - app2
         if (notes) {
@@ -160,11 +172,27 @@ const fetchInput = async() => {
             notesOutput.innerHTML = `<p>${msgForNotes}</p>`;
             holder6.appendChild(notesOutput);
             console.log(`Notes: ${notes}.`);
+
+            myTrip.notes = notes;
         };
+
+        console.log("myTrip", myTrip);
+        localStorage.setItem('my-trip', JSON.stringify(myTrip));
+        console.log("ls.my-trip", localStorage.getItem('my-trip'));
+        
+        // Append my last trip to the existing list of trips
+        const myTripsStr = localStorage.getItem('my-trips');
+        if (myTripsStr) {
+            let myTrips = eval(`(${myTripsStr})`);
+        } else {
+            let myTrips = [];
+        }
+        myTrips.push(myTrip);
+        localStorage.setItem('my-trips', JSON.stringify(myTrips));
+
     } catch (error) {
         console.log("error", error);
     };
-    localStorage.setItem(fetchInput, 'saveInfo');
 };
 
 // localStorage.setItem(fetchInput, 'saveInfo');

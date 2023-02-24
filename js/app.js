@@ -182,10 +182,11 @@ const fetchInput = async() => {
         
         // Append my last trip to the existing list of trips
         const myTripsStr = localStorage.getItem('my-trips');
+        let myTrips;
         if (myTripsStr) {
-            let myTrips = eval(`(${myTripsStr})`);
+            myTrips = eval(`(${myTripsStr})`);
         } else {
-            let myTrips = [];
+            myTrips = [];
         }
         myTrips.push(myTrip);
         localStorage.setItem('my-trips', JSON.stringify(myTrips));

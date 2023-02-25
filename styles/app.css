@@ -13,13 +13,15 @@
         grid-template-columns: 60% 40%;
     }
     #app2 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(0, 1fr);
         margin: 20px 5%;
     }
+    .appContent {
+        padding: 5px 10px;
+        width: 300px;
+    }
 }
-@media (min-width: 801px)  and (max-width: 1299px) { /* medium screens */
+@media (min-width: 801px)  and (max-width: 1349px) { /* medium screens */
     #container {
         display: flex;
         flex-direction: column;
@@ -33,12 +35,14 @@
     }
     #app2 {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 40px;
         margin: 20px 10%;
     }
+    .appContent {
+        padding: 10px 20px;
+        width: 315px;
+    }
 }
-@media (min-width: 1300px) { /* large screens */
+@media (min-width: 1350px) { /* large screens */
     #container {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -49,9 +53,11 @@
     }
     #app2 {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 40px;
         margin: 20px 10%;
+    }
+    .appContent {
+        padding: 10px 20px;
+        width: 350px;
     }
 }
 
@@ -63,7 +69,7 @@
     justify-content: center;
 }
 #container:hover {
-    transform: scale(1.001);
+    transform: scale(1.003);
     transition: .5s;
 }
 #app, 
@@ -84,66 +90,63 @@
     padding: 0 40px;
     text-align: center;
 }
-.holder {
+#app1 .holder {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 .buttons {
     display: grid;
     gap: 0 10px;
     width: 100%;
 }
-.buttons button {
-    display: flex;
-}
 
 /* app 2 */
 #app2 {
-    align-content: center;
     display: grid;
+    gap: 40px;
+    justify-content: center;
+}
+.tripNbOutput {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
 }
 .appContent {
     box-shadow: -5px 5px 20px 10px #dbdbdb;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.appContent:hover {
+    transform: scale(1.003);
+    transition: .5s;
 }
 #app2 .holder {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0;
 }
-#btns {
-    display: flex;
-    flex-direction: row;
-    gap: 0 5px;
-}
-#delete,
-#edit {
+#delete {
+    align-items: center;
     background-color: #d7d7d7;
     border: 0 none;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
     padding: 5px;
     width: 100%;
 }
 #delete:hover {
     background-color: #b83f35;
-}
-#edit:hover {
-    background-color: #5d92c0;
-}
-.holder svg {
-    padding: 10px;
-}
-#app2 .hostingInfo,
-#app2 .flightInfo,
-#app2 .notes {
-    align-items: center;
-    text-align: justify;
+    cursor: pointer;
+    transition: .5s;
 }

@@ -24,47 +24,10 @@
       </div>
     </header>
     <div id="wrapper">
-      <div id="container" style="display:none;">
-        <div id="app">
-          <img src="media/newtrip-img.jpg" alt="new trip img">
-        </div>
-        <div id="app1">
-          <div class="holder">
-            <label class="required" for="location">Where do you want to go?</label>
-            <input type="text" id="location" placeholder="Ex: Toronto, Canada" onkeyup="success()"> <!-- -->
-          </div>
-          <div class="holder">
-            <label class="required" for="date">When are you planning on leaving?</label>
-            <input type="date" id="date" placeholder="" onkeyup="success()"> <!-- -->
-          </div> 
-          <div class="holder">
-            <label for="flightInfo">Enter flight information (optional)</label>
-            <textarea class="flightInfo" id="flightInfo" placeholder="Ex: ORD 3:00PM Flight 22" rows="5" cols="10" optional></textarea>
-          </div>
-          <div class="holder">
-            <label for="hostingInfo">Enter hosting/accomodation information (optional)</label>
-            <textarea class="hostingInfo" id="hostingInfo" placeholder="Ex: RXJLK94 Room 25" rows="5" cols="10" optional></textarea>
-          </div>
-          <div class="holder">
-            <label for="notes">Enter additional notes (optional)</label>
-            <textarea class="notes" id="notes" placeholder="Ex: Packing list" rows="5" cols="10" optional></textarea>
-          </div>
-          <div class="holder">
-            <button id="generate" type="submit" disabled>Add trip</button>
-            <button onClick="window.location.href=window.location.href" id="reset">
-              Reset
-            </button>
-          </div>
-          <div style="display:flex;justify-content:flex-start;font-size:12px;padding-bottom:10px;">
-            <div class="required"></div>Required fields
-          </div>
-        </div>
-      </div>
+      <div id="nbOfTrips"></div>
       <div id="app2">
-        <!-- <div class="appContent"></div> -->
       </div>
     </div>
-    <script src="js/app.js"></script>
     <footer>
       <div id="copyrightFooter">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
@@ -73,12 +36,13 @@
         <p>Copyright</p>
         <p>2023</p>
         <div>
-            Github: <a href="https://github.com/j25mq" target="_blank">j25mq</a>                
+            Github: <a href="https://github.com/j25mq" target="_blank">j25mq</a>
         </div>
         <div>
-            Website: <a href="https://www.juliemiquelard.com" target="_blank">juliemiquelard.com</a>                
+            Website: <a href="https://www.juliemiquelard.com" target="_blank">juliemiquelard.com</a>
         </div>
     </div>
     </footer>
   </body>
+  <script src="js/my-trips.js"></script>
 </html>

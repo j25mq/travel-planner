@@ -1,13 +1,12 @@
 # Table of contents
 
-- [Project Summary](#project-summary)
+- [Project Summary and features](#project-summary)
 - [Installation Requirements](#requirements)
 - [Design system](#design-system)
 - [Code owners](#code-owners)
  
-
-## [Project Summary](#project-summary)
-The main goal of this project is to create a multi-section landing page. The leading functionality here is to be able to scroll to the appropriate section on the page when an element/item is clicked in the navbar. The use of JavaScript to create content, and interact with the elements is more than privileged.
+## [Project Summary and features](#project-summary)
+The project included a simple form asking the user to enter at least a location, and a date, as well as other optional information such as flight & hosting information and to add notes. The trip added can be found in 'my trips', in which the user can see the number of trips planner and delete one or multiple trips.
 
 ## [Installation Requirements](#requirements)
 Download ZIP on Github or clone it from profile.
@@ -70,11 +69,6 @@ The project should be running on http://localhost:8080/.
 - usable on modern desktop, tablet, and phone browsers
 - **responsive layout**
 - **reponsive navbar**
-
-#### Styling
-- styling should be added for **active states**
-- set **CSS class active state** when the element is in the **viewport**
-- active section in the navbar should be **highlighted**
 
 #### Content Structure
 - homepage (app1) built with HTML

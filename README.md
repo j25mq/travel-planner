@@ -89,6 +89,6 @@ The project should be running on http://localhost:8080/.
 - comments should be present at the beginning of each procedure and class
 
 # [Code owners](#code-owners)
-Website: https://www.juliemiquelard.com/
-Github: https://github.com/j25mq
+Website: https://www.juliemiquelard.com/ <br>
+Github: https://github.com/j25mq <br>
 Instagram: https://www.instagram.com/j25mq/

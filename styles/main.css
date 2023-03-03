@@ -83,12 +83,14 @@ input[type=date],
     border: none;
     border-radius: 5px;
     color: black;
-    height: 50px;
+    padding: 10px;    
+    overflow: hidden;    
+    height: 50px;    
+    min-height: 50px;
     max-height: 100px;
-    padding: 10px;
     width: 100%;
+    min-width: 100%;
     max-width: 100%;
-    overflow: hidden;
 }
 textarea:hover,
 input:hover {

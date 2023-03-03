@@ -12,6 +12,11 @@ header {
     display: flex;
     justify-content: center;
 }
+.goBackIcon {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
 
 @media (max-width: 1199px) { /* smaller screens */
     .headline {

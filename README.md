@@ -9,16 +9,61 @@
 ## [Project Summary](#project-summary)
 The main goal of this project is to create a multi-section landing page. The leading functionality here is to be able to scroll to the appropriate section on the page when an element/item is clicked in the navbar. The use of JavaScript to create content, and interact with the elements is more than privileged.
 
-# [Installation Requirements](#requirements)
+## [Installation Requirements](#requirements)
+Download ZIP on Github or clone it from profile.
+![Screenshot 2023-03-03 at 9 00 48 AM](https://user-images.githubusercontent.com/107758701/222664932-d5b56a3a-88c7-4696-b56e-5ab42df44da4.png)
+Install package and start server ('cd .../travel-planner' , 'npm install').
+The project should be running on http://localhost:8080/.
 
 ### Interface and Architecture
 
 #### Architecture
-- css
-  - style.css
-- index.html
+- dist
+  - js
+    - app.js
+    - my-trips.js
+  - media
+    - journal.svg
+  - styles
+    - app.css
+    - footer.css
+    - header.css
+    - main.css
+  - index.html
+  - my-trips.html
 - js
   - app.js
+  - my-trips.js
+- media
+  - journal.svg
+- node_modules
+- src
+  - client
+    - css
+      - app.css
+      - footer.css
+      - header.css
+      - main.css
+    - js
+      - app.js
+      - my-trips.js
+    - media
+      - journal.svg
+    - index.js
+  - server
+    - index.js
+    - mockAPI.js
+- styles
+  - app.css
+  - footer.css
+  - header.css
+  - main.css
+- index.html
+- my-trips.html
+- webpack.dev.js
+- webpack.prod.js
+- package-lock.json
+- package.json
 - README
 
 #### Usability
@@ -31,19 +76,9 @@ The main goal of this project is to create a multi-section landing page. The lea
 - set **CSS class active state** when the element is in the **viewport**
 - active section in the navbar should be **highlighted**
 
-#### HTML Structure
-- at least **4 sections** added to the page 
-
-### Landing Page Behaviour
-
-#### Navigation
-- built **dynamically as an unordered list** - starts with empty ul and then dynamically 
-
-#### Section Active State
-- should be clear **which section is being viewed** while scrolling through the page
-
-#### Scroll to Anchor
-- when clicking an item from the navigation menu, the link should **scroll to the appropriate section**
+#### Content Structure
+- homepage (app1) built with HTML
+- trips added page (app2) built with JS
 
 ### Documentation
 
@@ -53,22 +88,7 @@ The main goal of this project is to create a multi-section landing page. The lea
 #### Comments
 - comments should be present at the beginning of each procedure and class
 
-# [Design system](#design-system)
-
-## Hover
-https://user-images.githubusercontent.com/107758701/208708660-118f002e-0842-43cf-83ff-9af3e52ba500.mov
-
-## Section being viewed
-![section-being-viewed](https://user-images.githubusercontent.com/107758701/208709234-9081d99a-bf0e-4a91-9b53-9a2b83f56ddb.png)
-
-## Typography and fonts
-Font used: 'Source Code Pro', monospace
-- h1: 60px
-- h2: 40px
-- p: 20px
-- li: 18px
-
-## Responsive
-https://user-images.githubusercontent.com/107758701/208710967-498559c5-ef49-4dad-b013-2decc6e98182.mov
-
-# [Code owners](#project-presentation)
+# [Code owners](#code-owners)
+Website: https://www.juliemiquelard.com/
+Github: https://github.com/j25mq
+Instagram: https://www.instagram.com/j25mq/
